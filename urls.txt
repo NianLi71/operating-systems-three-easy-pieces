@@ -49,3 +49,9 @@
 149 http://pages.cs.wisc.edu/~remzi/OSTEP/dist-nfs.pdf
 150 http://pages.cs.wisc.edu/~remzi/OSTEP/dist-afs.pdf
 151 http://pages.cs.wisc.edu/~remzi/OSTEP/dist-dialogue.pdf
+152 http://pages.cs.wisc.edu/~remzi/OSTEP/dialogue-security.pdf
+153 http://pages.cs.wisc.edu/~remzi/OSTEP/security-intro.pdf
+154 http://pages.cs.wisc.edu/~remzi/OSTEP/security-authentication.pdf
+155 http://pages.cs.wisc.edu/~remzi/OSTEP/security-access.pdf
+156 http://pages.cs.wisc.edu/~remzi/OSTEP/security-crypto.pdf
+157 http://pages.cs.wisc.edu/~remzi/OSTEP/security-distributed.pdf

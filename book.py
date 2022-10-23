@@ -78,7 +78,7 @@ def merge_pdf():
     output_dir = Path("./output")
     files = [file.resolve() for file in sorted(output_dir.glob("*.pdf"))]
 
-    files = files[-2:] + files[0:-2]
+    # files = files[-2:] + files[0:-2]
 
     # print(files)
     merger = PdfFileMerger()
@@ -98,8 +98,8 @@ def read_file():
 
 
 if __name__ == "__main__":
-    # scrape_urls2()
-    # download_book()
+    scrape_urls2()
+    download_book()
     merge_pdf()
     # read_file()
 
