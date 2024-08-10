@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import os
-import pathlib
+# import os
+# import pathlib
 import threading
 from pathlib import Path
 
@@ -86,7 +86,7 @@ def merge_pdf():
     for pdf in files:
         merger.append(open(pdf, "rb"))
 
-    with open("book.pdf", "wb") as fout:
+    with open("Operating Systems: Three Easy Pieces.pdf", "wb") as fout:
         merger.write(fout)
 
 
@@ -102,4 +102,3 @@ if __name__ == "__main__":
     download_book()
     merge_pdf()
     # read_file()
-
