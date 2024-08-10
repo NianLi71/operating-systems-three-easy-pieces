@@ -8,7 +8,7 @@ from pathlib import Path
 
 import bs4
 import requests
-from PyPDF2 import PdfFileMerger
+from PyPDF2 import PdfMerger
 
 
 def scrape_urls():
@@ -81,7 +81,7 @@ def merge_pdf():
     # files = files[-2:] + files[0:-2]
 
     # print(files)
-    merger = PdfFileMerger()
+    merger = PdfMerger()
 
     for pdf in files:
         merger.append(open(pdf, "rb"))
