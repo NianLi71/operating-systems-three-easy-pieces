@@ -1,14 +1,14 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import os
-import pathlib
+# import os
+# import pathlib
 import threading
 from pathlib import Path
 
 import bs4
 import requests
-from PyPDF2 import PdfFileMerger
+from PyPDF2 import PdfMerger
 
 
 def scrape_urls():
@@ -81,12 +81,12 @@ def merge_pdf():
     # files = files[-2:] + files[0:-2]
 
     # print(files)
-    merger = PdfFileMerger()
+    merger = PdfMerger()
 
     for pdf in files:
         merger.append(open(pdf, "rb"))
 
-    with open("book.pdf", "wb") as fout:
+    with open("Operating Systems: Three Easy Pieces.pdf", "wb") as fout:
         merger.write(fout)
 
 
@@ -102,4 +102,3 @@ if __name__ == "__main__":
     download_book()
     merge_pdf()
     # read_file()
-
